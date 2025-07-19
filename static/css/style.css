@@ -1,0 +1,299 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f0f0f;
+  color: white;
+  line-height: 1.6;
+}
+
+/* Utility Classes */
+.flex {
+  display: flex;
+}
+
+.s-around {
+  justify-content: space-around;
+}
+
+.s-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.t-center {
+  text-align: center;
+}
+
+.t-white {
+  color: white;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: #ff4d4d;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin: 10px 5px 0 0;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #e33b3b;
+}
+
+.live {
+  background-color: #00adb5;
+}
+
+.live:hover {
+  background-color: #019ca2;
+}
+
+/* Navbar */
+#navbar {
+  padding: 20px;
+  background-color: #1a1a1a;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.left-nav h2 {
+  font-size: 1.5rem;
+  color: #ff4d4d;
+}
+
+.right-nav {
+  list-style: none;
+}
+
+.right-nav li {
+  margin: 0 10px;
+}
+
+.right-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.right-nav a:hover {
+  color: #ff4d4d;
+}
+
+/* Home Section */
+#home {
+  padding: 80px 20px;
+  flex-wrap: wrap;
+}
+
+.home-left {
+  flex: 1;
+  max-width: 500px;
+}
+
+.home-content h1 {
+  font-size: 2.5rem;
+  color: #ff4d4d;
+}
+
+.home-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.home-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.profile-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* About Section */
+#about {
+  padding: 80px 20px;
+}
+
+.about-container {
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.about-right {
+  flex: 2;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Skills Section */
+#skills {
+  padding: 80px 20px;
+}
+
+.skills-wrapper {
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+}
+
+.skills-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.skills-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.skills-right {
+  flex: 2;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.skill-item {
+  background-color: #1f1f1f;
+  padding: 10px 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Projects Section */
+#project {
+  padding: 80px 20px;
+}
+
+.project-container {
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project-card {
+  background-color: #1f1f1f;
+  padding: 20px;
+  width: 300px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.project-card h3 {
+  color: #ff4d4d;
+  margin-bottom: 10px;
+}
+
+/* Contact Section */
+#contact {
+  padding: 80px 20px;
+  background-color: #121212;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  display: grid;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.contact-form .btn {
+  width: fit-content;
+  padding: 12px 25px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #888;
+}
+
+/* Footer */
+footer {
+  background-color: #1a1a1a;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 30px;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-links a:hover {
+  color: #ff4d4d;
+}
+
+.footer-social {
+  margin: 15px 0;
+}
+
+.footer-social a {
+  margin: 0 8px;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.footer-social a:hover {
+  color: #ff4d4d;
+}
